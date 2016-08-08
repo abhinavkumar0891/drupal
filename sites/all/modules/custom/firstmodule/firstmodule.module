@@ -1,0 +1,52 @@
+<?php
+
+# this function is the menu handler for our drupal form/module.
+# it is an implementation of the Drupal hook_menu function.
+function firstmodule_menu() {
+  $items = array();
+  $items['firstmodule/form'] = array(
+    'title' => t('My first Drupal form'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('firstmodule_form'),
+    'access arguments' => array('access content'),
+    'description' => t('My first Drupal form'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+# the "callback" function; when the menu item or url is
+# accessed, this function will be called
+# 
+//function firstmodule_form() {
+//  return drupal_get_form('firstmodule_form');
+//}
+
+# our drupal form "form builder" function
+function firstmodule_form($form,&$form_state) {
+
+  # an html textfield for our drupal form
+  $form['name'] = array(
+    '#type' => 'textfield',
+    '#title' => t(' Name'),
+  );
+  $form['age'] = array (
+        '#type' => 'textfield',
+
+  '#number_type' => 'integer',
+  '#title' => t(' Age') ,
+  );
+  # an html submit button for our drupal form
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => 'Submit',
+  );
+  return $form;
+}
+
+# our drupal form submit handler (using a submit handler
+# given by the default naming convention, i.e.,
+# 'firstmodule_form1' plus '_submit')
+function firstmodule_form_submit($form, &$form_state) {
+  drupal_set_message(t('The form has been submitted.'));
+}

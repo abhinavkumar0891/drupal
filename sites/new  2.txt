@@ -1,0 +1,8 @@
+name = "Form Details Module"
+description = "A details form module used to learn module development and forms creation."
+package = Administration
+core = 7.x
+configure = admin/config/content/
+files[] = form_details.module
+files[] = form_details.inc
+php = 5.2

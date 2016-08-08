@@ -1,0 +1,8 @@
+name = "Form Person Module"
+description = "A details form module used to learn module development and forms creation."
+package = Administration
+core = 7.x
+configure = admin/config/content/
+files[] = form_person.module
+files[] = form_person.inc
+php = 5.2
