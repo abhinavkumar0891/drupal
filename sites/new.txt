@@ -1,4 +1,4 @@
-name = "Form Details Module"
+name = "form Details Module"
 description = "A details form module used to learn module development and forms creation."
 package = Administration
 core = 7.x
