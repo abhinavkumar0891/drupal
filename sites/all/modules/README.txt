@@ -1,7 +1,7 @@
 Modules extend your site functionality beyond Drupal core.
 
 WHAT TO PLACE IN THIS DIRECTORY?
---------------------------------
+-------------
 
 Placing downloaded and custom modules in this directory separates downloaded and
 custom modules from Drupal core's modules. This allows Drupal core to be updated
@@ -24,10 +24,10 @@ Drupal cache so it can be found. (Alternatively, you can disable the module
 before moving it and then re-enable it after the move.)
 
 MULTISITE CONFIGURATION
------------
+--------
 
 In multisite configurations, modules found in this directory are available to
-all sites. Alternatively, the sites/your_site_name/modules directory pattern
+ sites. Alternatively, the sites/your_site_name/modules directory pattern
 may be used to restrict modules to a specific site instance.
 
 MORE INFORMATION
