@@ -24,7 +24,7 @@ Drupal cache so it can be found. (Alternatively, you can disable the module
 before moving it and then re-enable it after the move.)
 
 MULTISITE CONFIGURATION
------------------------
+-----------
 
 In multisite configurations, modules found in this directory are available to
 all sites. Alternatively, the sites/your_site_name/modules directory pattern
